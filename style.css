@@ -27,29 +27,30 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 1rem;
   color: white;
-  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255),
-    0 0 30px rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+  text-shadow: 0 0 8px rgba(255, 255, 255, 1),
+  0 0 16px rgba(255, 255, 255, 0.95), 0 0 24px rgba(255, 255, 255, 0.9);
 }
 
+/* Specific glow effect for Portfolio */
 h1.portfolio {
-  text-shadow: 0 0 5px rgba(255, 255, 200, 0.5),
-    0 0 10px rgba(255, 255, 200, 0.3), 0 0 15px rgba(255, 255, 150, 0.2);
-  animation: glow-animation 2s infinite alternate;
-  animation-play-state: paused; /* L'animazione inizia in pausa */
+text-shadow: 0 0 10px rgba(255, 255, 200, 1),
+  0 0 20px rgba(255, 255, 230, 0.95), 0 0 30px rgba(255, 255, 255, 0.9);
+animation: glow-animation 2s infinite alternate;
+animation-play-state: paused; /* L'animazione inizia in pausa */
   margin-top: 0%; /* Aggiunto per alzare la scritta */
 }
 
 @keyframes glow-animation {
-  0% {
-    text-shadow: 0 0 5px rgba(255, 255, 200, 0.5),
-      0 0 10px rgba(255, 255, 200, 0.3), 0 0 15px rgba(255, 255, 150, 0.2);
-  }
-  100% {
-    text-shadow: 0 0 10px rgba(255, 255, 200, 0.7),
-      0 0 20px rgba(255, 255, 200, 0.5), 0 0 30px rgba(255, 255, 150, 0.4);
-  }
+0% {
+  text-shadow: 0 0 5px rgba(255, 255, 200, 1),
+    0 0 8px rgba(255, 255, 230, 0.95), 0 0 13px rgba(255, 255, 255, 0.9);
 }
-
+100% {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 1),
+    0 0 15px rgba(255, 255, 255, 0.98), 0 0 20px rgba(255, 255, 255, 0.95);
+}
+}
 /* Button container */
 .buttons {
   display: flex;
