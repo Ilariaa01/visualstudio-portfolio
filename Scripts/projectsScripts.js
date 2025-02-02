@@ -11,11 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: "body",
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false, // Removed markers for production
     },
     onComplete: () => {
       menuOpen = true;
-      console.log("tl complete");
     },
   });
 
@@ -24,16 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.set(work, {
       scale: 1 - 0.02 * (index + 1),
       y: `-${(works.length - index) * 30}px`,
+      backgroundImage: `url(../Contents/projectCard${index + 1}.png)`,
     });
-    console.log(`setting z-index to ${works.length - index}`);
   });
 
   sections.forEach((section, index) => {
     tl.to(section, { duration: 1, y: `-=${viewHeight}` });
-    if (index == 2) {
+    if (index === 2) {
       works.forEach((work, index) => {
         const rotations = [-5, 5];
-        //gsap.to(works, 0.2, {scale: `+=0.3`, stagger: 0.1});
         tl.to(work, {
           duration: 0.5,
           scale: 1.1,
