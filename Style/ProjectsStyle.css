@@ -11,8 +11,12 @@ body {
 }
 
 .title {
-  font-weight: bold;
-  font-size: 10vw;
+  font-family: PS-Aelyn;
+  font-size: 5vw;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
 }
 #intro {
   display: flex;
@@ -59,7 +63,7 @@ section {
 }
 
 #section1 {
-  background-image: url(../Contents/motionProject.png);
+  background-image: url(../Contents/motionVideo.png);
   background-size: cover;
   background-position: center;
   font-family: PS-Aelyn;
@@ -74,7 +78,11 @@ section {
 }
 
 #section2 {
-  background-color: #99ccff; /* Light Blue */
+  background-image: url(../Contents/appSwape.png);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+    0 0 16px rgba(255, 255, 255, 0.95), 0 0 24px rgba(255, 255, 255, 0.9);
 }
 
 #section3 {
@@ -88,15 +96,35 @@ section {
 }
 
 .title-text {
+  position: relative;
+  top: 470px;
   font-family: PS-Aelyn;
-  font-size: 8rem;
+  font-size: 11rem;
   font-weight: 300;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
   color: white;
   text-shadow: 0 0 10px rgba(255, 255, 255, 1),
     0 0 16px rgba(255, 255, 255, 0.95), 0 0 24px rgba(255, 255, 255, 0.9);
+}
+
+.title-text {
+  text-shadow: 0 0 10px rgba(255, 255, 200, 1),
+    0 0 20px rgba(255, 255, 230, 0.95), 0 0 30px rgba(255, 255, 255, 0.9);
+  animation: glow-animation 2s infinite alternate;
+  animation-play-state: paused;
+}
+
+@keyframes glow-animation {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 200, 1),
+      0 0 8px rgba(255, 255, 230, 0.95), 0 0 13px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1),
+      0 0 15px rgba(255, 255, 255, 0.98), 0 0 20px rgba(255, 255, 255, 0.95);
+  }
 }
 
 .profileBackButton {

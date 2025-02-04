@@ -42,3 +42,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const titleText = document.querySelector(".title-text");
+
+  // Attiva l'animazione quando la pagina viene caricata
+  titleText.style.animationPlayState = "running";
+
+  // Attiva l'animazione al passaggio del mouse
+  titleText.addEventListener("mouseenter", function () {
+    titleText.style.animationPlayState = "running";
+  });
+
+  // Ferma l'animazione quando il mouse esce
+  titleText.addEventListener("mouseleave", function () {
+    titleText.style.animationPlayState = "paused";
+  });
+});
