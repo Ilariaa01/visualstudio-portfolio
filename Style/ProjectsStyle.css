@@ -39,6 +39,7 @@ section {
 #works {
   width: var(--work-size);
   height: var(--work-size);
+  position: relative;
   .work {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     width: var(--work-size);
@@ -51,6 +52,7 @@ section {
     align-items: center;
     background-size: cover;
     background-position: center;
+
     /* 
     .number {
       text-align: center;
@@ -61,6 +63,29 @@ section {
     } */
   }
 }
+
+/* #works-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.side-text {
+  font-family: Plus Jakarta Sans;
+  font-size: 3rem;
+  color: #ffffff;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.left-text {
+  left: -480px;
+}
+
+.right-text {
+  right: -280px;
+} */
 
 #section1 {
   background-image: url(../Contents/motionVideo.png);
@@ -92,16 +117,23 @@ section {
 }
 
 #section4 {
-  background-color: #ffcc99; /* Light Orange */
+  background-image: url(../Contents/parcoToscano1.png);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+    0 0 16px rgba(255, 255, 255, 0.95), 0 0 24px rgba(255, 255, 255, 0.9);
+  /* .title {
+    color: rgb(0, 0, 0);
+  } */
 }
 
 .title-text {
   position: relative;
-  top: 470px;
+  top: 270px;
   font-family: PS-Aelyn;
   font-size: 11rem;
   font-weight: 300;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
   color: white;

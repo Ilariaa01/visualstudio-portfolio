@@ -102,9 +102,9 @@ h1.portfolio {
 .footer-sections {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns of equal width */
-  gap: 16rem; /* Space between columns */
+  gap: 12rem; /* Space between columns */
   width: 80%;
-  margin: 10rem auto 0; /* Centered with top margin */
+  /* margin: 10rem auto 0; Centered with top margin */
   color: white;
   padding: 1rem; /* Added padding for better spacing */
 }
@@ -151,24 +151,38 @@ h1.portfolio {
   color: #ffffff; /* Ensure contrast */
 }
 
-.text,
+/* .text,
 .skills,
 .contact-info {
   font-size: 1rem;
-}
+} */
 
-.skills {
+/* .skills {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+} */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 .skill-item {
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* padding: 1px; */
+  border-radius: 10px;
 }
 
 .skill-logo {
   width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.2rem;
   /*height: auto; /* Maintain aspect ratio */
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -180,10 +194,16 @@ h1.portfolio {
 .skill-name {
   font-size: 1.2rem;
   /*font-weight: ; /* Added bold for emphasis */
+  /* font-weight: 500; */
   font-family: "Plus Jakarta Sans", sans-serif;
   border: 1px solid white;
   border-radius: 25px;
   text-align: center;
+}
+
+.separator {
+  font-size: 2rem;
+  color: white;
 }
 
 .contact-info .contact-item {
@@ -209,7 +229,7 @@ h1.portfolio {
 /* Stile per il testo sotto la foto */
 .footer-text {
   font-size: 1rem;
-  line-height: 1.6; /* Altezza della riga per migliorare la leggibilità */
+  line-height: 1.5; /* Altezza della riga per migliorare la leggibilità */
   color: white;
   margin-bottom: 2rem; /* Spazio tra il testo e la sezione dei contatti */
   text-align: left;
