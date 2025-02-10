@@ -175,6 +175,7 @@ h1.portfolio {
   /* justify-content: space-between; */
   /* padding: 1px; */
   border-radius: 10px;
+  gap: 1rem;
 }
 
 .skill-logo {
@@ -199,11 +200,13 @@ h1.portfolio {
   border: 1px solid white;
   border-radius: 25px;
   text-align: center;
+  padding: 4px 8px;
 }
 
 .separator {
   font-size: 2rem;
-  color: white;
+  /* justify-items: center; */
+  transform: translate(0%, -10%);
 }
 
 .contact-info .contact-item {
@@ -242,8 +245,8 @@ h1.portfolio {
 /* Responsive Design */
 @media (max-width: 768px) {
   .footer-sections {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
-    width: 90%; /* Adjusted width for smaller screens */
+    grid-template-columns: 1fr; /* Dispone le sezioni del footer in una singola colonna */
+    width: 90%; /* Riduce la larghezza per adattarsi meglio agli schermi più piccoli */
   }
 
   .section-title {
@@ -257,7 +260,7 @@ h1.portfolio {
 
 @media (max-width: 480px) {
   .footer-sections {
-    gap: 1rem; /* Reduced gap for very small screens */
+    gap: 1rem; /* Diminuisce lo spazio tra le sezioni per risparmiare spazio */
   }
 
   .section-title {

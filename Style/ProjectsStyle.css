@@ -4,15 +4,17 @@
 
 body {
   margin: 0;
-  height: 300vh;
+  height: 100vh;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1.5rem;
   background-image: url(../Contents/sfondo.png);
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
 }
 
 .title {
   font-family: PS-Aelyn;
-  font-size: 5vw;
+  font-size: 10vw;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -30,7 +32,7 @@ section {
   width: 100vw;
   height: 100vh;
   /* border: 1px solid red; */
-  top: 100vh;
+  /* top: 100vh; */
   .title {
     color: white;
   }
@@ -120,6 +122,7 @@ section {
   background-image: url(../Contents/parcoToscano1.png);
   background-size: cover;
   background-position: center;
+
   text-shadow: 0 0 10px rgba(255, 255, 255, 1),
     0 0 16px rgba(255, 255, 255, 0.95), 0 0 24px rgba(255, 255, 255, 0.9);
   /* .title {
