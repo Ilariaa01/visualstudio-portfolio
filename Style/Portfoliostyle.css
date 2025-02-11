@@ -12,7 +12,6 @@ html {
   background-image: url(../Contents/sfondo.png);
   text-align: center;
 }
-
 /* Posizionamento immagini */
 .image-top-right,
 .image-bottom-left {
@@ -22,23 +21,19 @@ html {
   height: auto;
   z-index: 10;
 }
-
 .image-top-right {
   top: 25px;
   right: 25px;
 }
-
 .image-bottom-left {
   bottom: 25px;
   left: 25px;
 }
-
 /* Contenitore centrale */
 .content {
   text-align: center;
   padding: 2rem;
 }
-
 /* Titolo principale */
 h1 {
   font-family: PS-Aelyn;
@@ -51,7 +46,6 @@ h1 {
   text-shadow: 0 0 10px rgba(255, 255, 255, 1),
     0 0 16px rgba(255, 255, 255, 0.95), 0 0 24px rgba(255, 255, 255, 0.9);
 }
-
 /* Effetto Portfolio */
 h1.portfolio {
   text-shadow: 0 0 10px rgba(255, 255, 200, 1),
@@ -59,7 +53,6 @@ h1.portfolio {
   animation: glow-animation 2s infinite alternate;
   animation-play-state: paused;
 }
-
 /* Effetto Glow */
 @keyframes glow-animation {
   0% {
@@ -71,13 +64,11 @@ h1.portfolio {
       0 0 15px rgba(255, 255, 255, 0.98), 0 0 20px rgba(255, 255, 255, 0.95);
   }
 }
-
 @media (max-width: 1024px) {
   h1 {
     font-size: 5rem;
   }
 }
-
 /* Bottoni */
 .buttons {
   display: flex;
@@ -85,7 +76,6 @@ h1.portfolio {
   justify-content: center;
   gap: 1rem;
 }
-
 .button {
   padding: 0.5rem 1rem;
   border: 1px solid white;
@@ -97,7 +87,6 @@ h1.portfolio {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 .button:hover {
   background-color: white;
   color: black;
