@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  /* height: 100vh; gestisce la grandezza della pagina */
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1.5rem;
   background-image: url(../Contents/sfondo.png);
@@ -43,7 +43,7 @@ section {
   height: var(--work-size);
   position: relative;
   .work {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); /* aggiunge ombra */
     width: var(--work-size);
     height: var(--work-size);
     background-color: #ccc;
@@ -135,7 +135,7 @@ section {
   top: 270px;
   font-family: PS-Aelyn;
   font-size: 11rem;
-  font-weight: 300;
+  /* font-weight: 300;  */
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -162,20 +162,6 @@ section {
   }
 }
 
-.profileBackButton {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
 .button {
   padding: 0.5rem 1rem;
   border: 1px solid white;
@@ -186,6 +172,9 @@ section {
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 .button:hover {

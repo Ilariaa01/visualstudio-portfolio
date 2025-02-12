@@ -9,45 +9,39 @@ body {
 }
 
 /* Bottoni */
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
 .button {
   padding: 0.5rem 1rem;
   border: 1px solid white;
   border-radius: 25px;
-  text-transform: uppercase;
+  text-transform: uppercase; /* Trasforma il testo in maiuscolo */
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   color: white;
   text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.profileBackButton {
-  position: fixed;
+  /* transition: all 0.3s ease; */
+  position: fixed; /* Posiziona il bottone in modo fisso */
   top: 20px;
   left: 20px;
-  z-index: 1000;
 }
+.button:hover {
+  background-color: white;
+  color: black;
+} /*stile del pulsante quando l'utente ci passa sopra con il mouse*/
 
 /* Footer */
 /* Contenitore principale */
 .footer-sections {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
-  gap: 12rem; /* Space between columns */
+  grid-template-columns: 1fr 1fr; /* Due colonne di uguale larghezza */
+  gap: 12rem; /* Spazio tra le due colonne */
   width: 80%;
   margin: 0 auto;
   /* margin: 10rem auto 0; Centered with top margin */
   color: white;
-  padding: 2rem; /* Added padding for better spacing */
-  align-items: center; /* Vertically align items in the grid */
-  justify-items: center; /* Horizontally align items in the grid */
+  padding: 2rem;
+  /* align-items: center;
+  justify-items: center; */
+  transform: translate(0.8%, 0%);
 }
 
 .section {
@@ -58,13 +52,12 @@ body {
 .section-title {
   font-family: "PS-Aelyn", sans-serif; /* Added fallback font */
   font-size: 2rem;
-  margin-bottom: 1.5rem; /* Adjusted margin */
-  color: #ffffff; /* Ensure contrast */
+  margin-bottom: 1.5rem;
+  color: #ffffff;
 }
 
 .skills-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   gap: 1rem;
 }
 
@@ -74,7 +67,7 @@ body {
   /* justify-content: space-between; */
   /* padding: 1px; */
   border-radius: 10px;
-  gap: 1rem;
+  gap: 1rem; /* Spazio tra le icone e il testo */
 }
 
 .skill-logo {
@@ -87,18 +80,18 @@ body {
   /*height: auto; /* Maintain aspect ratio */
   font-family: "Plus Jakarta Sans", sans-serif;
   border: 1px solid white;
-  border-radius: 360px; /* Rounded shape */
+  border-radius: 360px;
   text-align: center;
 }
 
 .skill-name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Plus Jakarta Sans", sans-serif;
   border: 1px solid white;
   border-radius: 25px;
-  padding: 4px 10px;
+  padding: 3px 10px;
   text-align: center;
-  white-space: nowrap;
+  white-space: nowrap; /* impedisce di andare a capo */
   /*font-weight: ; /* Added bold for emphasis */
   /* font-weight: 500; */
 }
@@ -106,27 +99,18 @@ body {
 .separator {
   font-size: 2rem;
   /* justify-items: center; */
-  transform: translate(0%, -10%);
+  transform: translate(0%, -10%); /* Spostare un elemento*/
 }
 
 .contact-info .contact-item {
-  margin-bottom: 0.5rem;
-}
-
-.workshops {
-  list-style-type: none; /* Remove default list styling */
-  padding-left: 0; /* Remove default padding */
-}
-
-.workshops li {
-  margin-bottom: 1rem; /* Consistent spacing */
+  margin: 0.5rem;
+  margin-left: 0%;
 }
 
 /* Stile per la foto nel footer */
 .footer-photo {
-  width: 200px;
+  width: 230px; /*Dimensione della foto*/
   height: auto; /* Mantieni le proporzioni */
-  margin-bottom: 1rem;
 }
 
 /* Stile per il testo sotto la foto */
@@ -136,10 +120,6 @@ body {
   color: white;
   margin-bottom: 2rem; /* Spazio tra il testo e la sezione dei contatti */
   text-align: left;
-}
-
-.footer-text p {
-  margin-bottom: 1rem; /* Spazio tra i paragrafi */
 }
 
 /* Responsive Design */

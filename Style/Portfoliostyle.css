@@ -1,4 +1,3 @@
-body,
 html {
   margin: 0;
   padding: 0;
@@ -10,6 +9,7 @@ html {
   align-items: center;
   justify-content: center;
   background-image: url(../Contents/sfondo.png);
+  background-size: cover;
   text-align: center;
 }
 /* Posizionamento immagini */
@@ -38,7 +38,7 @@ html {
 h1 {
   font-family: PS-Aelyn;
   font-size: 8rem;
-  font-weight: 300;
+  font-weight: 300; /*peso del font*/
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -72,22 +72,21 @@ h1.portfolio {
 /* Bottoni */
 .buttons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 1rem; /*Aggiunge uno spazio tra i due bottoni*/
 }
 .button {
   padding: 0.5rem 1rem;
   border: 1px solid white;
   border-radius: 25px;
-  text-transform: uppercase;
+  text-transform: uppercase; /* Trasforma il testo in maiuscolo */
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   color: white;
-  text-decoration: none;
+  text-decoration: none; /* Toglie le decorazione intorno al testo */
   transition: all 0.3s ease;
 }
 .button:hover {
   background-color: white;
   color: black;
-}
+} /*stile del pulsante quando l'utente ci passa sopra con il mouse*/

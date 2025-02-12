@@ -1,9 +1,9 @@
 let menuOpen = false;
 
 document.addEventListener("DOMContentLoaded", () => {
-  const viewHeight = window.innerHeight;
-  const sections = document.querySelectorAll("body > section");
-  const works = document.querySelectorAll("#works .work");
+  const viewHeight = window.innerHeight; // controlla l'altezza della finestra
+  const sections = document.querySelectorAll("body > section"); // seleziona tutte le sezioni
+  const works = document.querySelectorAll("#works .work"); // seleziona tutti i lavori
 
   // setting timeline
   const tl = gsap.timeline({
