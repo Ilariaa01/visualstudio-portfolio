@@ -132,9 +132,9 @@ section {
 
 .title-text {
   position: relative;
-  top: 270px;
+  top: 35vh;
   font-family: PS-Aelyn;
-  font-size: 11rem;
+  font-size: 11vw;
   /* font-weight: 300;  */
   letter-spacing: 0.1rem;
   text-transform: uppercase;

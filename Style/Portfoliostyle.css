@@ -32,7 +32,8 @@ html {
 /* Contenitore centrale */
 .content {
   text-align: center;
-  padding: 2rem;
+  padding: 3vw;
+  /* max-width: 90%; */
 }
 /* Titolo principale */
 h1 {
@@ -64,7 +65,7 @@ h1.portfolio {
       0 0 15px rgba(255, 255, 255, 0.98), 0 0 20px rgba(255, 255, 255, 0.95);
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 5rem;
   }
